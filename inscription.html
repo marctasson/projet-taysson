@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>inscription complete</title>
+</head>
+<body>
+   <form action=""method="post">
+    <h1>inscription a la formation</h1>
+    <fieldset>
+        <legend><h3>information personnelles</h3></legend>
+        <p><label for="civilite">civilite*:</label>
+            <select name="civilite" id="civilite"required>
+                <option value="">selectionnez</option>
+            <option value="m">Monsieur</option>
+            <option value="mme">Madame</option>
+            </select>
+            
+        </p>
+        <p>
+            <label for="nom">Nom*:</label>
+            <input type="text" id="nom" name="nom"required>
+        </p>
+
+        <p>
+            <label for="prenom">Prenom*:</label>
+            <input type="text" name="prenom" id="prenom"required>
+        </p>
+
+        <p>
+            <label for="date_de naissance">Date de naissance*:</label>
+            <input type="date" name="date de naissance" id="date de naissance" max="2008-01-01"required>
+        </p>
+    </fieldset>
+
+    <fieldset>
+        <legend><h3>coordonnees</h3></legend>
+        <p>
+            <label for="email">Email*:</label>
+            <input type="email" name="email" id="imail"required>
+        </p>
+
+        <p>
+            <label for="telephone">Telephone*:</label>
+            <input type="tel" name="telephone" id="telephone"required>
+        </p>
+      <p>
+          <label for="ville">ville*:</label>
+        <input type="ville" name="ville" id="ville"required>
+      </p>
+
+      <p>
+        <label for="pays">pays</label>
+        <select name="pays" id="Pays">
+            <OPtion value="HT"select>Haiti</OPtion>
+        </select>
+    
+      </p>
+    </fieldset>
+
+    <fieldset>
+        <legend><h3>Choix Formation</h3></legend>
+
+        <p>
+            <label for="formation">Formation souhaite*:</label>
+            <select name="Formation" id="formation" required>
+                <option value="">choisissez une formation</option>
+                <option value="html-css">HTML/CSS Debutant</option>
+                <option value="javascript">javascript</option>
+                <option value="react">react</option>
+                <option value="pack complet"> pack complet</option>
+
+            </select>
+        </p>
+        <p>
+            <label for="niveau actuel">Niveau actuel*:</label>
+            <select name="Niveau" id="Niveau" required>
+                <option value="">determiner votre niveau</option>
+                <option value="">debutant</option>
+                <option value="">intermediaire</option>
+                <option value="">avance</option>
+            </select>
+        </p>
+        <p>
+            <label for="debut">Date de debut souhaitee*:</label>
+            <input type="date" id="debut" name="date_debut">
+        </p>
+        <p>
+            <label for="motivation">Motivation*:</label>
+            <textarea name="motivation" id="motivation" rows="10" maxlength="500" required> </textarea>
+        </p>
+
+    </fieldset>
+
+    <FIeldset>
+        <LEgend><H3>option</H3></LEgend>
+    <p>
+        <label for="modalite">Modalite*:</label>
+        <input type="radio" name="Modalite" value="presentiel" required> presentiel
+        <input type="radio" name="modalite" value="en_ligne" required>  En ligne
+        <input type="radio" name="modalite" value="hybride" required> hybride
+    </p>
+    <p>
+        <label for="">Horaires preferes*:</label>
+        <input type="checkbox" name="horaires" value="matin"> matin
+        <input type="checkbox" name="horaires" value="apres_midi"> apres_midi
+        <input type="checkbox" name="horaires" value="soir"> soir
+    </p>
+    <p>
+        <input type="checkbox" name="newsletter" value="oui">
+        <label for=""> Recevoir la newsletter</label>
+    </p>
+    </FIeldset>
+
+    <fieldset>
+        <legend><h3>validation</h3></legend>
+        <p>
+            <input type="checkbox" value="conditions" required>
+            <label for="">j'accepte les conditions generales*</label>
+        </p>
+        <p>
+            <button type="submit">valider mon inscription</button>
+            <button type="reset"> Effacer</button>
+        </p>
+    </fieldset>
+
+   </form>
+</html>
